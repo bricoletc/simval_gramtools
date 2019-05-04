@@ -2,6 +2,18 @@ set -e
 data_DIR=$1
 KMER_SIZE=$2
 
+
+usage(){
+	echo "###########################"
+	echo "usage: $0 data_DIR k_size"
+	echo "###########################"
+	exit 0
+}
+
+if [ -z "${data_DIR}" -o -z "${KMER_SIZE}" ] ; then
+	usage
+fi
+
 data_DIR=$(realpath ${data_DIR})
 
 ref=$(find ${data_DIR} -maxdepth 1 -regextype posix-egrep -regex ".*.fa(sta)?")

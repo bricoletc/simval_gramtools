@@ -143,7 +143,10 @@ while mutations_made < min_mutations:
 
                     mutant_vcf_records.append(mutant_record)
 
-                buff += base
+                    buff += modified_bases
+
+                else:
+                    buff += base
                 if len(buff) > 59:
                     mutated += buff + "\n"
                     buff = ""

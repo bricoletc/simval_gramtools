@@ -1,10 +1,10 @@
 kmer_size: 8
-reference: "sliced_data/slice.fa"
-vcf: "sliced_data/rebased_slice.vcf"
+reference: "/home/brice/Desktop/git_repos/simulation_validation_gramtools/input_data/sliced_data/slice.fa"
+vcf: "/home/brice/Desktop/git_repos/simulation_validation_gramtools/input_data/sliced_data/rebased_slice.vcf"
 
 singularity_img: "/home/brice/Desktop/Gramtools/Singularity_Images/Images/4c39699_gramtools.img"
 
-samples_dir: "/home/brice/Desktop/Projects/pop_run_gramtools/samples"
-base_dir: "/home/brice/Desktop/Projects/pop_run_gramtools/runs"
+samples_dir: "/home/brice/Desktop/git_repos/simulation_validation_gramtools/input_data/generated_samples"
+base_dir: "/home/brice/Desktop/git_repos/simulation_validation_gramtools/tests/multi_sample"
 
 quasimap_threads: 5
